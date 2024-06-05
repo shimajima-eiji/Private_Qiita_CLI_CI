@@ -1,0 +1,2 @@
+# Private_Qiita_CLI_CI
+Qiitaに記事を消されず、Zennにも移行しやすいCIを作る
