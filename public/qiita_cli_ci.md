@@ -1,13 +1,13 @@
 ---
-title: newArticle002
+title: IDが被ると別ファイルでも同一ページの更新をしてしまうらしいので、手動でnull入れる
 tags:
   - QiitaCLI
 private: true
 updated_at: '2024-06-06T17:02:34+09:00'
-id: db749b0ff51e55559105
+id: null
 organization_url_name: null
 slide: false
 ignorePublish: false
 ---
 
-CLIでアップしたものをgit pushでbot経由で実行させた場合、なぜか記事が非表示にされる？ので、GitHubのWebエディタで編集して更新する
+という挙動かな？
