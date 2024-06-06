@@ -10,4 +10,4 @@ slide: false
 ignorePublish: false
 ---
 
-Qiita CLI テスト
+CLIでアップしたものをgit pushでbot経由で実行させた場合、なぜか記事が非表示にされる？ので、GitHubのWebエディタで編集して更新する
