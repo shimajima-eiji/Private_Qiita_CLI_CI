@@ -1,5 +1,5 @@
 ---
-title: newArticle002
+title: 無理やりタイトル書き換えられてそう。やり直し
 tags:
   - QiitaCLI
 private: true
@@ -10,4 +10,4 @@ slide: false
 ignorePublish: false
 ---
 
-CLIでアップしたものをgit pushでbot経由で実行させた場合、なぜか記事が非表示にされる？ので、GitHubのWebエディタで編集して更新する
+ここもなんかおかしい、勝手に書き換えてる
