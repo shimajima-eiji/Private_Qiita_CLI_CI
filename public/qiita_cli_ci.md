@@ -1,5 +1,5 @@
 ---
-title: IDが被ると別ファイルでも同一ページの更新をしてしまうらしいので、手動でnull入れる
+title: CLIで内容を書き換えた時は即時更新？
 tags:
   - QiitaCLI
 private: true
@@ -10,4 +10,4 @@ slide: false
 ignorePublish: false
 ---
 
-という挙動かな？
+別の場所にgit cloneしておいて、npx qiita pullで最新版引っ張ってこれないなんてことある？
