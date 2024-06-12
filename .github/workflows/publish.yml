@@ -44,10 +44,8 @@ jobs:
       - name: qiita pull
         run: | 
           npx qiita init
-          npx qiita login --github
+          npx qiita login --github --token=${{ secrets.QIITA_TOKEN }}
           npx qiita pull
-        env:
-          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
       - uses: EndBug/add-and-commit@v9
         with:
           author_name: github-actions[bot]
