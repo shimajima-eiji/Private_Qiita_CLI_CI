@@ -7,7 +7,7 @@ updated_at: ''
 id: 
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 （投稿後、編集でキャンペーンに参加する方法で投稿マラソンのバッジがもらえることがわかったので、本稿はQiitaCLIで投稿を検証する方法も兼ねています）
