@@ -16,20 +16,20 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publish_articles:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: increments/qiita-cli/actions/publish@v1
-        with:
-          qiita-token: ${{ secrets.QIITA_TOKEN }}
-          root: "."
+  # publish_articles:
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 5
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+  #     - uses: increments/qiita-cli/actions/publish@v1
+  #       with:
+  #         qiita-token: ${{ secrets.QIITA_TOKEN }}
+  #         root: "."
 
   pull_qiita_articles:
-    needs: publish_articles
+    # needs: publish_articles
     runs-on: ubuntu-latest
     timeout-minutes: 5
     if: ${{ success() }}
@@ -43,9 +43,8 @@ jobs:
       - run: npm install -g qiita-cli
       - name: Copy rename plugin
         run: | 
-          mkdir -p ~/.qiita-cli/plugins
-          cp ./rename-plugin.js ~/.qiita-cli/plugins/
-          npx qiita pull --plugins=rename-plugin
+          npx qiita pull
+          node ./reanme-plugin.js
       - uses: EndBug/add-and-commit@v9
         with:
           author_name: github-actions[bot]
