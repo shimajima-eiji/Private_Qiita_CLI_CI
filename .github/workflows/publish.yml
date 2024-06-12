@@ -42,8 +42,10 @@ jobs:
           node-version: '16'
       - run: npm install -g qiita-cli
       - name: Copy rename plugin
-        run: cp ./rename-plugin.js ~/.qiita-cli/plugins/
-      - run: npx qiita pull --plugins=rename-plugin
+        run: | 
+          mkdir -p ~/.qiita-cli/plugins
+          cp ./rename-plugin.js ~/.qiita-cli/plugins/
+          npx qiita pull --plugins=rename-plugin
       - uses: EndBug/add-and-commit@v9
         with:
           author_name: github-actions[bot]
