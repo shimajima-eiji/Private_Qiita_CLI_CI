@@ -1,11 +1,11 @@
 ---
 title: QiitaCLIでnpx qiita pullを自動化したかった（失敗と考察）
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - QiitaCLI
+tags:
   - バッドノウハウ
+  - QiitaCLI
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-06-13T08:58:25+09:00'
+id: 3dbd100e080f8282abb7
 organization_url_name: null
 slide: false
 ignorePublish: false
