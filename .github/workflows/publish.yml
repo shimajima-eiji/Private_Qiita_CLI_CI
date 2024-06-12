@@ -16,39 +16,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # publish_articles:
-  #   runs-on: ubuntu-latest
-  #   timeout-minutes: 5
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 0
-  #     - uses: increments/qiita-cli/actions/publish@v1
-  #       with:
-  #         qiita-token: ${{ secrets.QIITA_TOKEN }}
-  #         root: "."
-
-  pull_qiita_articles:
-    # needs: publish_articles
+  publish_articles:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    if: ${{ success() }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: increments/qiita-cli/actions/publish@v1
         with:
-          node-version: '16'
-      - run: npm install -g qiita-cli
-      - name: qiita pull
-        run: | 
-          npx qiita init
-          npx qiita login --github --token=${{ secrets.QIITA_TOKEN }}
-          npx qiita pull
-      - uses: EndBug/add-and-commit@v9
-        with:
-          author_name: github-actions[bot]
-          author_email: 41898282+github-actions[bot]@users.noreply.github.com
-          message: '[CI]publish.pull_qiita_articles'
-          push: true
+          qiita-token: ${{ secrets.QIITA_TOKEN }}
+          root: "."
