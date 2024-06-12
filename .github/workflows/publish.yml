@@ -41,10 +41,13 @@ jobs:
         with:
           node-version: '16'
       - run: npm install -g qiita-cli
-      - name: Copy rename plugin
+      - name: qiita pull
         run: | 
+          npx qiita init
+          npx qiita login --github
           npx qiita pull
-          node ./reanme-plugin.js
+        env:
+          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
       - uses: EndBug/add-and-commit@v9
         with:
           author_name: github-actions[bot]
