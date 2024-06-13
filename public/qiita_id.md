@@ -1,10 +1,10 @@
 ---
 title: QiitaCLIで作成したファイルはpublish時にBOTが走ってID更新してくれる？かチェックする記事
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+tags:
   - QiitaCLI
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-06-13T12:58:34+09:00'
+id: eb96dc3cece6e4945b96
 organization_url_name: null
 slide: false
 ignorePublish: false
