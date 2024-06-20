@@ -1,11 +1,11 @@
 ---
 title: AI時代だからこそ、ITプログラマー研修に「レビュー駆動開発」を！
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - 新人研修
+tags:
   - ポエム
+  - 新人研修
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-06-20T22:10:53+09:00'
+id: 5533e0d8db9a16c357f0
 organization_url_name: null
 slide: false
 ignorePublish: false
