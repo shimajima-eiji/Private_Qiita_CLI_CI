@@ -1,13 +1,13 @@
 ---
 title: Qiita Engineer Festa参加の所信表明とか提供できるサービスの話
 tags:
-  - Qiita_Engineer_Festa
   - ポエム
   - 所信表明
   - AIイラスト
+  - Qiita_Engineer_Festa
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-02T05:42:50+09:00'
+id: b478340d3d3d05370710
 organization_url_name: null
 slide: false
 ignorePublish: false
