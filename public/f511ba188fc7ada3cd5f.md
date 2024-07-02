@@ -5,7 +5,7 @@ tags:
   - レビュー
   - アウトプット
   - AIイラスト
-  - Qiita_Engineer_Festa
+  - QiitaEngineerFesta2024
 private: false
 updated_at: '2024-07-02T08:15:20+09:00'
 id: f511ba188fc7ada3cd5f
