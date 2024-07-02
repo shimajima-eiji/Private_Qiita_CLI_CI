@@ -1,14 +1,14 @@
 ---
 title: 扉絵の作成手順
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+tags:
+  - サービス
+  - AI
+  - SaaS
   - QiitaCLI
   - QiitaEngineerFesta2024
-  - AI
-  - Saas
-  - サービス
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-02T09:18:23+09:00'
+id: 60e36ab8eb0254e21f84
 organization_url_name: null
 slide: false
 ignorePublish: false
