@@ -1,12 +1,12 @@
 ---
 title: 【LinuC 101試験キャンペーン】 プログラミングスクール出身生が周囲と一歩差別化を図るならインフラの知識をつけよう！
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - QiitaEngineerFesta2024
-  - LinuC
+tags:
   - 試験
+  - linuc
+  - QiitaEngineerFesta2024
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-04T19:04:54+09:00'
+id: e86e1e8af7d5ea02fb37
 organization_url_name: null
 slide: false
 ignorePublish: false
