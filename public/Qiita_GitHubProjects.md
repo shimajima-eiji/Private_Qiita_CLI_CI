@@ -1,14 +1,14 @@
 ---
 title: GitHub ProjectsのタイムラインをTODO用に活用してみた結果
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+tags:
+  - GitHub
+  - バッドノウハウ
+  - プロジェクト管理
   - QiitaCLI
   - QiitaEngineerFesta2024
-  - GitHub
-  - プロジェクト管理
-  - バッドノウハウ
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-05T17:28:06+09:00'
+id: c74ff10cf22c0ad812dd
 organization_url_name: null
 slide: false
 ignorePublish: false
