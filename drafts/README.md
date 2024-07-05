@@ -1,4 +1,10 @@
-# Qiita FrontMatterテンプレート
+# 下書きページ README
+## リンク集
+- [Qiita](https://qiita.com)
+  - [画像アップロード](https://qiita.com/settings/uploading_images)
+    - GitHub内であげると、プライベートリポジトリのrawに置くので、パスから特定されてしまう
+
+## Qiita FrontMatterテンプレート
 GitHub Webエディタで編集するときはtemplate.mdを探すよりREADME.mdで表示されているものを探した方が早かったので運用変える
 
 ```
