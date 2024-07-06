@@ -1,14 +1,14 @@
 ---
 title: 現役エンジニア兼講師が実体験から考える、資格を取るべき理由（実務経験者も）
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - QiitaEngineerFesta2024
-  - linux
-  - linuc
+tags:
+  - Linux
   - 初心者
   - ポエム
+  - linuc
+  - QiitaEngineerFesta2024
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-06T09:13:21+09:00'
+id: 34f71344767094e39603
 organization_url_name: null
 slide: false
 ignorePublish: false
