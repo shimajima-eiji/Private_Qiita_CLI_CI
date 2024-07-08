@@ -5,9 +5,9 @@ on:
   workflow_dispatch:
     inputs:
       attention:
-        description: 'コミットメッセージ。Webエディタで編集した記事と内容を書くと良い'
+        description: '補足のコミットメッセージ欄。; 「Webの編集を取り込み」に続くメッセージを入力する。'
         required: true
-        default: '【手動実行】Qiita記事の最新版をとってきてGitHubに適用する'
+        default: 'なし'
 
 # push時の権限を与える
 permissions:
@@ -30,6 +30,6 @@ jobs:
       - name: コミット＆プッシュ
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "${{ github.event.inputs.attention }}"
+          commit_message: "Webの編集を取り込み。補足： 「${{ github.event.inputs.attention }}」"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
