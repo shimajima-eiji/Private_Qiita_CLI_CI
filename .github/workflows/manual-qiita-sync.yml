@@ -8,6 +8,9 @@ on:
         required: false
         default: '記事の同期'
 
+permissions:
+  contents: write
+
 jobs:
   sync-qiita:
     runs-on: ubuntu-latest
