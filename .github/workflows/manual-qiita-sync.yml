@@ -1,0 +1,25 @@
+name: Manual Qiita Sync
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: '実行理由'
+        required: false
+        default: '記事の同期'
+
+jobs:
+  sync-qiita:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Pull Qiita articles
+        uses: increments/qiita-cli/actions/pull@v1
+        with:
+          qiita-token: ${{ secrets.QIITA_TOKEN }}
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Sync Qiita articles"
