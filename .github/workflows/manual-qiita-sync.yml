@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       attention:
-        description: 'このボタンを押した後にQiitaのWebエディタを使わないこと'
+        description: 'このボタンを押した後にQiitaのWebエディタを使わないこと（入力欄への対応不要）'
 
 # push時の権限を与える
 permissions:
