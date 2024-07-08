@@ -1,12 +1,12 @@
 ---
 title: QiitaCLIで投稿マラソンに参加していて気付いた、仕様による致命的な課題と解決アプローチ
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+tags:
+  - バッドノウハウ
   - QiitaCLI
   - QiitaEngineerFesta2024
-  - バッドノウハウ
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-09T08:12:22+09:00'
+id: f35d739ed853827dd135
 organization_url_name: null
 slide: false
 ignorePublish: false
