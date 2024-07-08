@@ -16,14 +16,14 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
-        with:
-          node-version: '21'
 
       - name: Install dependencies
         run: npm install
 
       - name: Pull Qiita articles
         run: npx qiita pull
+        env:
+          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
