@@ -2,11 +2,6 @@ name: Manual Qiita Sync
 
 on:
   workflow_dispatch:
-    inputs:
-      reason:
-        description: '実行理由'
-        required: false
-        default: '記事の同期'
 
 permissions:
   contents: write
