@@ -17,6 +17,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Set the workflow run name
+        run: |
+          curl -X PATCH \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }} \
+          -d '{"name":"${{ github.event.inputs.run_name }}"}'
+        
       - name: Setup Node.js
         uses: actions/setup-node@v4
 
