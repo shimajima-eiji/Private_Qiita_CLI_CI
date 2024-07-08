@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Pull Qiita articles
-        run: npx qiita pull
+        run: npx qiita pull -f
         env:
           QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
 
