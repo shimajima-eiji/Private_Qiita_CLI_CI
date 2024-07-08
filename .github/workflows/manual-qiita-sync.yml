@@ -5,7 +5,9 @@ on:
   workflow_dispatch:
     inputs:
       attention:
-        description: 'このボタンを押した後にQiitaのWebエディタを使わないこと（入力欄への対応不要）'
+        description: '（必須）コミットメッセージ（デフォルトはGitHub Actionsのタイトル）'
+        required: true
+        default: '【手動実行】Qiita記事の最新版をとってきてGitHubに適用する'
 
 # push時の権限を与える
 permissions:
@@ -28,6 +30,6 @@ jobs:
       - name: コミット＆プッシュ
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Sync Qiita articles"
+          commit_message: "${{ github.event.inputs.run_name }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
