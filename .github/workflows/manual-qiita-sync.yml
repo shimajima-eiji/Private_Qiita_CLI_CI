@@ -2,6 +2,11 @@ name: Manual Qiita Sync
 
 on:
   workflow_dispatch:
+    inputs:
+      run_name:
+        description: '【必須】実行名を変更して視認性を上げよう'
+        required: true
+        default: '（デフォルト）記事を最新化'
 
 permissions:
   contents: write
