@@ -1,13 +1,10 @@
-name: Manual Qiita Sync
+name: 【手動実行】Qiita記事の最新版をとってきてGitHubに適用する
 
+# 手動実行させる（記事を書いた後だとコンフリクトを起こすので、運用対処は必須）
 on:
   workflow_dispatch:
-    inputs:
-      run_name:
-        description: '【必須】実行名を変更して視認性を上げよう'
-        required: true
-        default: '（デフォルト）記事を最新化'
 
+# push時の権限を与える
 permissions:
   contents: write
 
@@ -16,27 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v4
 
-      - name: Set the workflow run name
+      - name: Qiitaの記事をとってくる。既に重複しているはずなので強制書き換えを付与
         run: |
-          curl -X PATCH \
-          -H "Accept: application/vnd.github.v3+json" \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }} \
-          -d '{"name":"${{ github.event.inputs.run_name }}"}'
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Pull Qiita articles
-        run: npx qiita pull -f
+          npm install
+          npx qiita pull -f
         env:
           QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
 
-      - name: Commit and push changes
+      - name: コミット＆プッシュ
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Sync Qiita articles"
