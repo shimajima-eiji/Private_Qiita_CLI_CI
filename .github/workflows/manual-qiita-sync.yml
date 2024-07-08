@@ -3,6 +3,9 @@ name: 【手動実行】Qiita記事の最新版をとってきてGitHubに適用
 # 手動実行させる（記事を書いた後だとコンフリクトを起こすので、運用対処は必須）
 on:
   workflow_dispatch:
+    inputs:
+      attention:
+        description: 'このボタンを押した後にQiitaのWebエディタを使わないこと'
 
 # push時の権限を与える
 permissions:
