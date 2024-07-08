@@ -14,10 +14,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Pull Qiita articles
-        uses: increments/qiita-cli/actions/pull@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          qiita-token: ${{ secrets.QIITA_TOKEN }}
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Pull Qiita articles
+        run: npx qiita pull
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
