@@ -5,7 +5,8 @@ on:
   workflow_dispatch:
     inputs:
       attention:
-        description: '補足のコミットメッセージ欄。; 「Webの編集を取り込み」に続くメッセージを入力する。'
+        # 残念ながらdescriptionでは改行ができない単一行メッセージ欄のため、運用を工夫したい
+        description: '補足のコミットメッセージ欄。「Webの編集を取り込み」に続くメッセージを入力する。'
         required: true
         default: 'なし'
 
