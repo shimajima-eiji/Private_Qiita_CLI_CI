@@ -30,6 +30,6 @@ jobs:
       - name: コミット＆プッシュ
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "${{ github.event.inputs.run_name }}"
+          commit_message: "コミットメッセージが空白？: ${{ github.event.inputs.attention }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
