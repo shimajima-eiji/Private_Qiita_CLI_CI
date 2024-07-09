@@ -1,14 +1,14 @@
 ---
 title: paizaのコードモンスター（コドモン）試遊してみた
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+tags:
+  - プログラミング
+  - ゲーム
+  - 初心者
   - paiza
   - コードモンスター
-  - ゲーム
-  - プログラミング
-  - 初心者
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-09T15:14:52+09:00'
+id: fd12e63de84440a7c3ca
 organization_url_name: null
 slide: false
 ignorePublish: false
