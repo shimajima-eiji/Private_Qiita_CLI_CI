@@ -1,5 +1,5 @@
 ---
-title: ##microcms_meetup microCMS Meetup 2024勉強会参加者レビュー
+title: microCMS Meetup 2024勉強会参加者レビュー
 tags: # 1以上、5以下。あとで手修正で足した方が安全
   - 勉強会
   - レビュー
