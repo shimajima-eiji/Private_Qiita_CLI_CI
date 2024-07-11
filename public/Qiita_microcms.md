@@ -1,14 +1,14 @@
 ---
 title: microCMS Meetup 2024勉強会参加者レビュー
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+tags:
   - 勉強会
   - レビュー
   - microCMS
   - QiitaCLI
   - QiitaEngineerFesta2024
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-11T20:45:26+09:00'
+id: 2b3829001e1a65ac7189
 organization_url_name: null
 slide: false
 ignorePublish: false
