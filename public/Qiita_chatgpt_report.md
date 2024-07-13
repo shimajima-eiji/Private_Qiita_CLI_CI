@@ -1,14 +1,14 @@
 ---
-title: "ChatGPT部 #46 部活動レポート"
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - ChatGPT
-  - AI
-  - LT
+title: 'ChatGPT部 #46 部活動レポート'
+tags:
   - 勉強会
   - レポート
+  - AI
+  - LT
+  - ChatGPT
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-13T20:16:03+09:00'
+id: 518297c8bea561ca0afe
 organization_url_name: null
 slide: false
 ignorePublish: false
