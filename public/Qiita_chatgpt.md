@@ -1,5 +1,5 @@
 ---
-title: '#ChatGPT部 🔰ChatGPTスゴ技大全を読む`
+title: 🔰ChatGPTスゴ技大全を読む
 tags: # 1以上、5以下。あとで手修正で足した方が安全
   - 本
   - ChatGPT
