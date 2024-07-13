@@ -1,14 +1,14 @@
 ---
-title: 🔰ChatGPTスゴ技大全を読む
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+title: "\U0001F530ChatGPTスゴ技大全を読む"
+tags:
   - 本
-  - ChatGPT
-  - LT
-  - AI
   - 初心者
+  - AI
+  - LT
+  - ChatGPT
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-13T10:00:30+09:00'
+id: 4c8d8c3369ce4b0a3e79
 organization_url_name: null
 slide: false
 ignorePublish: false

@@ -1,14 +1,14 @@
 ---
-title: 🔰「10倍速で成果が出る！ChatGPTスゴ技大全」を読む（ChatGPT部 LT資料）
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+title: "\U0001F530「10倍速で成果が出る！ChatGPTスゴ技大全」を読む（ChatGPT部 LT資料）"
+tags:
   - 本
-  - ChatGPT
-  - LT
-  - AI
   - 初心者
+  - AI
+  - LT
+  - ChatGPT
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-13T10:00:30+09:00'
+id: fc290094364e00664656
 organization_url_name: null
 slide: true
 ignorePublish: false
