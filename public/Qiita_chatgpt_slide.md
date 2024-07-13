@@ -1,5 +1,5 @@
 ---
-title: '#ChatGPT部 🔰「10倍速で成果が出る！ChatGPTスゴ技大全」を読む`
+title: 🔰「10倍速で成果が出る！ChatGPTスゴ技大全」を読む（ChatGPT部 LT資料）
 tags: # 1以上、5以下。あとで手修正で足した方が安全
   - 本
   - ChatGPT
