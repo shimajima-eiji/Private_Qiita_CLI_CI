@@ -1,5 +1,5 @@
 ---
-title: "\U0001F530「10倍速で成果が出る！ChatGPTスゴ技大全」を読む（ChatGPT部 LT資料）"
+title: "\U0001F530「10倍速で成果が出る！ChatGPTスゴ技大全」を読む（ChatGPT部 LT資料）#46"
 tags:
   - 本
   - 初心者
@@ -7,7 +7,7 @@ tags:
   - LT
   - ChatGPT
 private: false
-updated_at: '2024-07-13T10:00:30+09:00'
+updated_at: '2024-07-13T20:05:42+09:00'
 id: fc290094364e00664656
 organization_url_name: null
 slide: true
@@ -108,6 +108,8 @@ ignorePublish: false
 このスライドは本書を参考に、ChatGPTを使ってQiitaスライド用のmarkdownを生成し、
 手直しする方針で進めたものです。
 原稿は以下
+
+https://qiita.com/nomurasan/items/4c8d8c3369ce4b0a3e79
 
 ---
 ## 書籍紹介
