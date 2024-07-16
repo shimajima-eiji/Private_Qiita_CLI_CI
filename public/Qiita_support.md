@@ -1,14 +1,14 @@
 ---
 title: フリーランスエンジニアになりたい人向け 補助金活用セミナー抜粋
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - フリーランス
-  - エンジニア
+tags:
+  - ポエム
   - 勉強
   - セミナー
-  - ポエム
+  - エンジニア
+  - フリーランス
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-17T07:02:48+09:00'
+id: a6e4925e9bc30dd8256f
 organization_url_name: null
 slide: false
 ignorePublish: false
