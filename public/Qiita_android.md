@@ -1,14 +1,14 @@
 ---
 title: 仮想デバイスでGoogleアカウント認証をした時に気を付けること
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - Googleアカウント
-  - 仮想環境
+tags:
   - スマートフォン
+  - 仮想環境
   - アプリ開発
+  - Googleアカウント
   - しくじり
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-17T07:53:59+09:00'
+id: 7032effc34525caa6c63
 organization_url_name: null
 slide: false
 ignorePublish: false
