@@ -1,14 +1,14 @@
 ---
 title: 【a = a + 1】改めて変数代入を「気持ち悪いもの」として見直して自らを戒める【a += 1】
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - 初心者
-  - 高齢者
-  - 研修
-  - 数学
+tags:
   - アルゴリズム
+  - 初心者
+  - 数学
+  - 研修
+  - 高齢者
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-17T08:18:49+09:00'
+id: 898ef6b33f9cbc328881
 organization_url_name: null
 slide: false
 ignorePublish: false
