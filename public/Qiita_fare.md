@@ -1,10 +1,10 @@
 ---
 title: エンジニア転職フェア(type転職フェア)に参加してきた話
-tags: # 1以上、5以下。あとで手修正で足した方が安全
+tags:
   - QiitaCLI
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-16T11:49:58+09:00'
+id: 840f529481fec2da744f
 organization_url_name: null
 slide: false
 ignorePublish: false
