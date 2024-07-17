@@ -1,12 +1,12 @@
 ---
 title: 「ウォーターフォール開発は遅く、アジャイル開発は早い」という誤解に対する私なりの見解
-tags: # 1以上、5以下。あとで手修正で足した方が安全
-  - ウォーターフォール
+tags:
   - アジャイル
   - ポエム
+  - ウォーターフォール
 private: false
-updated_at: ''
-id: 
+updated_at: '2024-07-17T22:20:48+09:00'
+id: e923c7746cfd0b9fd85b
 organization_url_name: null
 slide: false
 ignorePublish: false
