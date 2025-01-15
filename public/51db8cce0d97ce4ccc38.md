@@ -1,10 +1,10 @@
 ---
-title: 11/12 実務で見つめるIT基礎（ITパスポート試験対策付き）
+title: 01/14 実務で見つめるIT基礎（セキュリティ）
 tags:
   - ノート
   - ITパスポート
 private: true
-updated_at: '2024-11-12T09:47:49+09:00'
+updated_at: '2025-01-15T08:35:12+09:00'
 id: 51db8cce0d97ce4ccc38
 organization_url_name: null
 slide: false
@@ -13,8 +13,10 @@ ignorePublish: false
 <!--
 ## レポートコメントキャッチアップ
 -->
-
+## AI＋セキュリティの時事ネタ
 https://ledge.ai/articles/ai_sqlite_vulnerability_detection
+
+https://news.yahoo.co.jp/articles/a884bc20f541de42e657020348fb7177f72b4ae5
 
 :::note warn
 ## キーワード
