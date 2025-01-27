@@ -1,5 +1,4 @@
-name: 【手動実行】Qiita記事の最新版をとってきてGitHubに適用する
-
+name: 【手動実行可能】Qiita記事の最新版をとってきてGitHubに適用する
 # 手動実行させる（記事を書いた後だとコンフリクトを起こすので、運用対処は必須）
 on:
   # UTC時間で実行。JSTだと9時
@@ -8,8 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       attention:
-        # 残念ながらdescriptionでは改行ができない単一行メッセージ欄のため、運用を工夫したい
-        description: '補足のコミットメッセージ欄。「Webの編集を取り込み」に続くメッセージを入力する。'
+        description: '補足のコミットメッセージ欄。「Webの編集を取り込み」に続くメッセージを一行で入力する。'
         required: true
         default: 'なし'
 
@@ -20,20 +18,21 @@ permissions:
 jobs:
   sync-qiita:
     runs-on: ubuntu-latest
+    # コミットメッセージを手動実行時は入力を、cron時は固定値を投入する
+    env:
+      COMMIT_ATTENTION: ${{ github.event.inputs.attention || 'cronにより自動バックアップ実行' }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v4
-
-      - name: Qiitaの記事をとってくる。既に重複しているはずなので強制書き換えを付与
+      - name: Qiitaの記事をとってくる。Webの内容を優先するため強制書き換えを付与
         run: |
           npm install
           npx qiita pull -f
         env:
           QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
-
       - name: コミット＆プッシュ
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Webの編集を取り込み。補足： 「${{ github.event.inputs.attention }}」"
+          commit_message: "Webの編集を取り込み。補足： 「${{ env.COMMIT_ATTENTION }}」"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
